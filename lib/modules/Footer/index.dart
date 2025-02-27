@@ -9,7 +9,7 @@ class FooterModules extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [Text("`Baringcucurong NHS`"), Text("ISPSC.edu.ph")],
+        children: [Text("Baringcucurong NHS"), Text("ISPSC.edu.ph")],
       ),
     );
   }
