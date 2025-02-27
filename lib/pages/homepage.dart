@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_student_handbook/modules/ContactDetails/index.dart';
+import 'package:smart_student_handbook/modules/Description.dart';
 import 'package:smart_student_handbook/modules/MissionVision/index.dart';
 import 'package:smart_student_handbook/modules/Resources/index.dart';
 import 'package:smart_student_handbook/modules/calendar/index.dart';
@@ -53,6 +54,7 @@ class Homepage extends StatelessWidget {
                   child: Column(
                     spacing: 30,
                     children: [
+                      DescriptionModule(),
                       MissionVisionModules(),
                       CalendarModules(),
                       ResourcesModules(),
