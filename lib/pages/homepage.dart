@@ -31,13 +31,16 @@ class Homepage extends StatelessWidget {
 
                   return FlexibleSpaceBar(
                     centerTitle: true,
-                    title: Text(
-                      "Smart Student Handbook",
-                      style: TextStyle(
-                        fontSize: fontSize,
-                        fontWeight: FontWeight.w600,
+                    title: Container(
+                      alignment: Alignment.bottomLeft,
+                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      child: Text(
+                        "Smart Student Handbook",
+                        style: TextStyle(
+                          fontSize: fontSize,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
-                      textAlign: TextAlign.center,
                     ),
                   );
                 },
