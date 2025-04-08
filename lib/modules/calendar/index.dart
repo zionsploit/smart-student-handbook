@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:syncfusion_flutter_calendar/calendar.dart';
+import 'package:smart_student_handbook/modules/calendar/SfCalendar.dart';
 
 class CalendarModules extends StatelessWidget {
   const CalendarModules({super.key});
@@ -20,30 +20,7 @@ class CalendarModules extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(
-          height: 500,
-          child: Card.outlined(
-            child: SfCalendar(
-              headerStyle: CalendarHeaderStyle(
-                textStyle: TextStyle(fontWeight: FontWeight.bold),
-                backgroundColor: const Color.fromARGB(0, 255, 255, 255),
-              ),
-              viewHeaderStyle: ViewHeaderStyle(
-                dayTextStyle: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              showTodayButton: true,
-              showCurrentTimeIndicator: true,
-              showDatePickerButton: true,
-              showNavigationArrow: true,
-              view: CalendarView.month,
-              monthViewSettings: MonthViewSettings(
-                showAgenda: true,
-                agendaViewHeight: 100,
-              ),
-              cellBorderColor: const Color.fromARGB(0, 255, 255, 255),
-            ),
-          ),
-        ),
+        SizedBox(height: 500, child: Card.outlined(child: CalendarEvents())),
       ],
     );
   }

@@ -32,6 +32,10 @@ class Homepage extends StatelessWidget {
 
                   return FlexibleSpaceBar(
                     centerTitle: true,
+                    background: Image(
+                      image: AssetImage("assets/image/bnhs_images.jpeg"),
+                      fit: BoxFit.cover,
+                    ),
                     title: Container(
                       alignment: Alignment.bottomLeft,
                       padding: EdgeInsets.symmetric(horizontal: 10),
@@ -40,6 +44,13 @@ class Homepage extends StatelessWidget {
                         style: TextStyle(
                           fontSize: fontSize,
                           fontWeight: FontWeight.w600,
+                          color: Colors.black87,
+                          shadows: [
+                            Shadow(color: Colors.white, offset: Offset(-1, -1)),
+                            Shadow(color: Colors.white, offset: Offset(1, -1)),
+                            Shadow(color: Colors.white, offset: Offset(1, 1)),
+                            Shadow(color: Colors.white, offset: Offset(-1, 1)),
+                          ],
                         ),
                       ),
                     ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_student_handbook/modules/rulesAndRegulations/policyOnStudentDeportmentAndDiscipline.dart';
 
 class RulesAndRegulationsModules extends StatelessWidget {
   const RulesAndRegulationsModules({super.key});
@@ -13,7 +14,14 @@ class RulesAndRegulationsModules extends StatelessWidget {
         child: InkWell(
           splashColor: Color(0xff2b2d42),
           onTap: () {
-            debugPrint("Rules and Regulations");
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder:
+                    (context) =>
+                        const PolicyonstudentdeportmentanddisciplineModule(),
+              ),
+            );
           },
           child: SizedBox(
             height: 100,
